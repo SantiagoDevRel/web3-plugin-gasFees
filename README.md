@@ -1,10 +1,6 @@
 # web3-plugin-gasFees
 
-===============================
-
 # Usage
-
-====================
 
 Installation
 
@@ -15,7 +11,7 @@ npm i web3-plugin-gasfees
 ```js
 //import Web3 and Plugin
 const { Web3 } = require("web3");
-const PluginOptimizer = require("@web3-plugin-gasfees");
+const PluginOptimizer = require("web3-plugin-gasfees");
 
 //initialize provider (Ethereum mainnet)
 const web3 = new Web3("https://eth.llamarpc.com");
