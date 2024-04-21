@@ -40,6 +40,7 @@ class PluginOptimizer extends Web3PluginBase {
     console.log("Average Gas Price:", Number(averageGasPrice));
     console.log("Minimum Gas Price:", Number(minGasPrice));
     console.log("Current Gas Price:", (await eth.getBlock(this, undefined, undefined, { number: FMT_NUMBER.NUMBER })).baseFeePerGas);
+    return {avgGas: Number(averageGasPrice), minGas: Number(minGasPrice)}
   }
 }
 
